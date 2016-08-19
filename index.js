@@ -9,13 +9,12 @@ function hexEncode(str) {
 	return result.join('');
 }
 
-function verifica(source, termo, split = true) {
+function verifica(source, termo, split) {
 	const words = split ? termo.split(' ') : [termo];
 	for (const word of words) {
 		const regex = new RegExp(hexEncode(word), 'i');
 		return regex.test(source) ? source : false;
 	}
-	return false;
 }
 
 function encontre(arr, k, v, split = true) {
