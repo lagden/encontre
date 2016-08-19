@@ -1,22 +1,15 @@
 root = true
 
 [*]
-indent_style = space
-end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
-
-[*.js]
 indent_style = tab
+indent_size = 2
 end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[{package.json,*.yml}]
+[*.{yaml,yml,json,coffee}]
 indent_style = space
-indent_size = 2
 
-[*.md]
+[*.{md,pug,marko}]
 trim_trailing_whitespace = false

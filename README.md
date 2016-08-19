@@ -1,6 +1,6 @@
 # Encontre
 
-> Just find it
+Just find it
 
 
 ## Install
