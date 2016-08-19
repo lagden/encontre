@@ -1,0 +1,49 @@
+{
+  "name": "lagden-find",
+  "version": "1.1.0",
+  "description": "Just find it",
+  "keywords": [
+    "find",
+    "array",
+    "object"
+  ],
+  "bug": {
+    "url": "https://github.com/lagden/encontre",
+    "email": "lagden@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Thiago Lagden",
+    "email": "lagden@gmail.com",
+    "url": "http://lagden.in"
+  },
+  "main": "index.js",
+  "repository": "lagden/encontre",
+  "scripts": {
+    "report": "nyc report --reporter=html",
+    "coverage": "nyc report --reporter=lcov | ./node_modules/coveralls/bin/coveralls.js",
+    "pretest": "xo",
+    "test": "nyc ava"
+  },
+  "devDependencies": {
+    "ava": "0.16.0",
+    "coveralls": "2.11.12",
+    "nyc": "8.1.0",
+    "xo": "0.16.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "xo": {
+    "envs": [
+      "es6",
+      "node"
+    ],
+    "esnext": true
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "license"
+  ]
+}
