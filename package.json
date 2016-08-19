@@ -23,7 +23,7 @@
     "report": "nyc report --reporter=html",
     "coverage": "nyc report --reporter=lcov | ./node_modules/coveralls/bin/coveralls.js",
     "pretest": "xo",
-    "test": "nyc ava"
+    "test": "nyc ava --tap | tap-nyan"
   },
   "devDependencies": {
     "ava": "0.16.0",
