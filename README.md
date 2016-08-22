@@ -53,7 +53,7 @@ The term that you looking for
 Type: `boolean`  
 Default: `true`
 
-Avoid break the term in pieces
+Break the term in pieces
 
 
 ## Usage
