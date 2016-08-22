@@ -1,7 +1,6 @@
 'use strict';
 
 import test from 'ava';
-import hexEncode from '../lib/hex-encode';
 import encontre from '../';
 import data from './fixture.json';
 
@@ -23,9 +22,4 @@ test('Deve retornar um array contendo um objeto com o nome Felipe Oliveira', t =
 test('Deve retornar um array vazio', t => {
 	const result = encontre(data, 'name', 'Sabrina');
 	t.false(Boolean(result.length));
-});
-
-test('Deve retornar um texto encodado em hexadecimal', t => {
-	const result = hexEncode('Tasashi');
-	t.is(result, '\\u0054\\u0061\\u0073\\u0061\\u0073\\u0068\\u0069');
 });
