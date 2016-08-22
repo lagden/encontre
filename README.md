@@ -48,6 +48,13 @@ Type: `string`
 
 The term that you looking for
 
+#### split
+
+Type: `boolean`
+Default: `true`
+
+Avoid break the term in pieces
+
 
 ## Usage
 
