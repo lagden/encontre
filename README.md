@@ -1,14 +1,14 @@
 # Encontre
 [![Build Status][ci-img]][ci]
-[![Coverage Status][cover-img]][cover]
+[![Coverage Status][coveralls-img]][coveralls]
 [![devDependency Status][devDep-img]][devDep]
 
-[ci-img]:     https://travis-ci.org/lagden/encontre.svg
-[ci]:         https://travis-ci.org/lagden/encontre
-[cover-img]:  https://codecov.io/github/lagden/encontre/coverage.svg?branch=master
-[cover]:      https://codecov.io/github/lagden/encontre?branch=master
-[devDep-img]: https://david-dm.org/lagden/encontre/dev-status.svg
-[devDep]:     https://david-dm.org/lagden/encontre#info=devDependencies
+[ci-img]:        https://travis-ci.org/lagden/encontre.svg
+[ci]:            https://travis-ci.org/lagden/encontre
+[coveralls-img]: https://coveralls.io/repos/github/lagden/encontre/badge.svg?branch=master
+[coveralls]:     https://coveralls.io/github/lagden/encontre?branch=master
+[devDep-img]:    https://david-dm.org/lagden/encontre/dev-status.svg
+[devDep]:        https://david-dm.org/lagden/encontre#info=devDependencies
 
 
 Just find it
