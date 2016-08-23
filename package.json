@@ -1,6 +1,6 @@
 {
   "name": "lagden-find",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Just find it",
   "keywords": [
     "find",
@@ -26,7 +26,7 @@
     "test": "nyc ava"
   },
   "dependencies": {
-    "lagden-hex": "1.0.0"
+    "lagden-hex": "1.1.0"
   },
   "devDependencies": {
     "ava": "0.16.0",

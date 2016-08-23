@@ -23,6 +23,18 @@ Just find it
 $ npm i -S lagden-find
 ```
 
+
+## Usage
+
+```javascript
+const encontre = require('lagden-find');
+const data = require('./data.json');
+
+const r = encontre(data, 'instrument', 'Bass');
+console.log(r);
+```
+
+
 ## API
 
 ### encontre(arr, k, q, split)
@@ -54,17 +66,6 @@ Type: `boolean`
 Default: `true`
 
 Break the term in pieces
-
-
-## Usage
-
-```javascript
-const encontre = require('lagden-find');
-const data = require('./data.json');
-
-const r = encontre(data, 'instrument', 'Bass');
-console.log(r);
-```
 
 
 ## License
