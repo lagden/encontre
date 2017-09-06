@@ -6,14 +6,14 @@
 [![devDependency Status][devDep-img]][devDep]
 [![XO code style][xo-img]][xo]
 
-[ci-img]:        https://travis-ci.org/lagden/encontre.svg
-[ci]:            https://travis-ci.org/lagden/encontre
-[coveralls-img]: https://coveralls.io/repos/github/lagden/encontre/badge.svg?branch=master
-[coveralls]:     https://coveralls.io/github/lagden/encontre?branch=master
-[dep-img]:       https://david-dm.org/lagden/encontre.svg
-[dep]:           https://david-dm.org/lagden/encontre
-[devDep-img]:    https://david-dm.org/lagden/encontre/dev-status.svg
-[devDep]:        https://david-dm.org/lagden/encontre#info=devDependencies
+[ci-img]:          https://travis-ci.org/lagden/encontre.svg
+[ci]:              https://travis-ci.org/lagden/encontre
+[coveralls-img]:   https://coveralls.io/repos/github/lagden/encontre/badge.svg?branch=master
+[coveralls]:       https://coveralls.io/github/lagden/encontre?branch=master
+[dep-img]:         https://david-dm.org/lagden/encontre.svg
+[dep]:             https://david-dm.org/lagden/encontre
+[devDep-img]:      https://david-dm.org/lagden/encontre/dev-status.svg
+[devDep]:          https://david-dm.org/lagden/encontre#info=devDependencies
 [xo-img]:          https://img.shields.io/badge/code_style-XO-5ed9c7.svg
 [xo]:              https://github.com/sindresorhus/xo
 
@@ -32,10 +32,10 @@ $ npm i -S lagden-find
 
 ```javascript
 const encontre = require('lagden-find')
-const collection = require('./data')
+const collection = [{name: 'Sabrina', age: 27}, {name: 'Lagden', age: 28}]
 
-const r = encontre(collection, 'name', 'sabrina')
-console.log(r)
+const r = encontre(collection, 'name', 'sa', {caseSensitive: false})
+console.log(r) // [{name: 'Sabrina', age: 27}]
 ```
 
 
