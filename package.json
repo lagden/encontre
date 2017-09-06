@@ -1,6 +1,6 @@
 {
   "name": "lagden-find",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "Just find it",
   "keywords": [
     "find",
@@ -26,23 +26,26 @@
     "test": "nyc ava"
   },
   "dependencies": {
-    "lagden-hex": "1.1.0"
+    "lagden-hex": "3.0.0"
   },
   "devDependencies": {
-    "ava": "0.16.0",
-    "coveralls": "2.11.12",
-    "nyc": "8.1.0",
-    "xo": "0.16.0"
+    "ava": "0.22.0",
+    "coveralls": "2.13.1",
+    "nyc": "11.2.0",
+    "xo": "0.18.2"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.0.0"
   },
   "xo": {
     "envs": [
-      "es6",
-      "node"
+      "es6"
     ],
-    "esnext": true
+    "esnext": true,
+    "semicolon": false,
+    "rules": {
+      "capitalized-comments": 0
+    }
   },
   "files": [
     "index.js",

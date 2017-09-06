@@ -1,8 +1,10 @@
 # Encontre
+
 [![Build Status][ci-img]][ci]
 [![Coverage Status][coveralls-img]][coveralls]
 [![Dependency Status][dep-img]][dep]
 [![devDependency Status][devDep-img]][devDep]
+[![XO code style][xo-img]][xo]
 
 [ci-img]:        https://travis-ci.org/lagden/encontre.svg
 [ci]:            https://travis-ci.org/lagden/encontre
@@ -12,9 +14,11 @@
 [dep]:           https://david-dm.org/lagden/encontre
 [devDep-img]:    https://david-dm.org/lagden/encontre/dev-status.svg
 [devDep]:        https://david-dm.org/lagden/encontre#info=devDependencies
+[xo-img]:          https://img.shields.io/badge/code_style-XO-5ed9c7.svg
+[xo]:              https://github.com/sindresorhus/xo
 
 
-Just find it
+Just find
 
 
 ## Install
@@ -27,45 +31,32 @@ $ npm i -S lagden-find
 ## Usage
 
 ```javascript
-const encontre = require('lagden-find');
-const data = require('./data.json');
+const encontre = require('lagden-find')
+const collection = require('./data')
 
-const r = encontre(data, 'instrument', 'Bass');
-console.log(r);
+const r = encontre(collection, 'name', 'sabrina')
+console.log(r)
 ```
 
 
 ## API
 
-### encontre(arr, k, q, split)
+### encontre(collection, k, q, options)
 
-#### arr
+parameter   | type                 | required    | default               | description
+----------- | -------------------- | ----------- | -------------------   | ------------
+collection  | array                | yes         | -                     | An `array` of objects - [see example](https://github.com/lagden/encontre/blob/master/test/fixture.json)
+k           | string               | yes         | -                     | The key of object which you would like to search
+q           | string               | yes         | -                     | The term that you looking for
+options     | object               | no          | [see below](#options) | Options
 
-*Required*  
-Type: `array`
 
-An `array` of objects - [see example](https://github.com/lagden/encontre/blob/master/test/fixture.json)
+#### options
 
-#### k
-
-*Required*  
-Type: `string`
-
-The key name which you would like to search
-
-#### q
-
-*Required*  
-Type: `string`
-
-The term that you looking for
-
-#### split
-
-Type: `boolean`  
-Default: `true`
-
-Break the term in pieces
+Name          | Type      | Required | Default                         | Description
+-----------   | --------- | -------- | ------------------------------- | ------------
+split         | boolean   | no       | true                            | Break the term in many words
+caseSensitive | boolean   | no       | true                            | The words can differ in meaning
 
 
 ## License

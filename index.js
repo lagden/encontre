@@ -1,9 +1,9 @@
-'use strict';
+'use strict'
 
-const verifica = require('./lib/verifica');
+const verifica = require('./lib/verifica')
 
-function encontre(arr, k, q, split = true) {
-	return arr.filter(obj => verifica(obj[k], q, split));
+function encontre(collection, k, q, options = {}) {
+	return collection.filter(obj => verifica(obj[k], q, options))
 }
 
-module.exports = encontre;
+module.exports = encontre
