@@ -19,8 +19,7 @@
   "main": "index.js",
   "repository": "lagden/encontre",
   "scripts": {
-    "report": "nyc report --reporter=html",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "report": "nyc report --reporter=text-lcov | coveralls",
     "pretest": "xo",
     "test": "ava"
   },
