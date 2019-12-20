@@ -1,6 +1,6 @@
 {
   "name": "lagden-find",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Just find it",
   "keywords": [
     "find",
@@ -14,8 +14,7 @@
   "license": "MIT",
   "author": {
     "name": "Thiago Lagden",
-    "email": "lagden@gmail.com",
-    "url": "http://lagden.in"
+    "email": "lagden@gmail.com"
   },
   "main": "index.js",
   "repository": "lagden/encontre",
@@ -23,20 +22,24 @@
     "report": "nyc report --reporter=html",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "pretest": "xo",
-    "test": "nyc ava"
+    "test": "ava"
   },
   "dependencies": {
-    "lagden-hex": "3.0.0"
+    "@tadashi/hex": "1.0.0"
   },
   "devDependencies": {
-    "ava": "0.22.0",
-    "coveralls": "2.13.1",
-    "nyc": "11.2.0",
-    "xo": "0.18.2"
+    "ava": "2.4.0",
+    "xo": "0.25.3"
   },
   "engines": {
     "node": ">=8.0.0"
   },
+  "files": [
+    "index.js",
+    "lib",
+    "README.md",
+    "license"
+  ],
   "xo": {
     "envs": [
       "es6"
@@ -47,10 +50,9 @@
       "capitalized-comments": 0
     }
   },
-  "files": [
-    "index.js",
-    "lib",
-    "README.md",
-    "license"
-  ]
+  "ava": {
+    "helpers": [
+      "test/helpers/**/*"
+    ]
+  }
 }

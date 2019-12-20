@@ -1,8 +1,8 @@
 'use strict'
 
 import test from 'ava'
-import encontre from '../'
-import data from './fixture'
+import data from './helpers/fixture.json'
+import encontre from '..'
 
 test('Deve retornar um array com 2 objetos contendo o nome Thiago', t => {
 	const result = encontre(data, 'name', 'Thiago Lagden')
