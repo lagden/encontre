@@ -24,11 +24,11 @@
     "test": "ava"
   },
   "dependencies": {
-    "@tadashi/hex": "1.0.0"
+    "@tadashi/hex": "2.0.0"
   },
   "devDependencies": {
-    "ava": "2.4.0",
-    "xo": "0.25.3"
+    "ava": "3.10.1",
+    "xo": "0.32.1"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -46,12 +46,14 @@
     "esnext": true,
     "semicolon": false,
     "rules": {
-      "capitalized-comments": 0
+      "capitalized-comments": 0,
+      "unicorn/prevent-abbreviations": 0
     }
   },
   "ava": {
-    "helpers": [
-      "test/helpers/**/*"
+    "files": [
+      "test/**/*",
+      "!test/helpers/**/*"
     ]
   }
 }
