@@ -1,8 +1,8 @@
 'use strict'
 
 const test = require('ava')
-const data = require('./helpers/fixture.json')
-const encontre = require('..')
+const data = require('./fixture/data.json')
+const encontre = require('../src')
 
 test('Deve retornar um array com 2 objetos contendo o nome Thiago', t => {
 	const result = encontre(data, 'name', 'Thiago Lagden')
@@ -21,7 +21,7 @@ test('Deve retornar um array contendo um objeto com o nome Felipe Oliveira', t =
 
 test('Deve retornar um array vazio', t => {
 	const result = encontre(data, 'name', 'Sabrina')
-	t.false(Boolean(result.length))
+	t.true(result.length === 0)
 })
 
 test('Deve retornar um array contendo um objeto com o nome Lucas Tadashi', t => {
